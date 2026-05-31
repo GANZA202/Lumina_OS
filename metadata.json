@@ -1,0 +1,6 @@
+{
+  "name": "Photography Portfolio & Media Sharing Platform",
+  "description": "A high-fidelity SaaS dashboard and client gallery platform for professional photographers to manage, protect, and share digital assets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

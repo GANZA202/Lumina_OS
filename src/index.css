@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-editorial-dark: #0F0F11;
+  --color-editorial-card: #18181B;
+  --color-editorial-border: #2A2A2E;
+  --color-editorial-tan: #C4A484;
+  --color-editorial-tan-hover: #E3CBB3;
+  --color-editorial-tan-dark: #8E7964;
+  --color-editorial-text-muted: #8E8E93;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  background-color: var(--color-editorial-dark);
+  color: #E0E0E0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom gorgeous thin scrollbars matching premium visual vibes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.2);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.45);
+}
+
+/* Elegant custom hover states */
+.scale-focus-effect {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+
+.scale-focus-effect:hover {
+  transform: translateY(-2px);
+}
